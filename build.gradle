@@ -1,17 +1,20 @@
+import java.nio.file.Files
+import java.nio.file.Paths
+
 version '1.0'
 
 buildscript{
     repositories{
         mavenCentral()
     }
-    
+
     ext{
         //the build number that this mod is made for
-        mindustryVersion = 'v146'
+        mindustryVersion = 'v147'
         kotlinVersion = "1.5.21"
         sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
     }
-    
+
     dependencies{
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     }
@@ -52,12 +55,12 @@ task jarAndroid{
 
         //dex and desugar files - this requires d8 in your PATH
         "d8 $dependencies --min-api 14 --output ${project.archivesBaseName}Android.jar ${project.archivesBaseName}Desktop.jar"
-            .execute(null, new File("$buildDir/libs")).waitForProcessOutput(System.out, System.err)
+                .execute(null, new File("$buildDir/libs")).waitForProcessOutput(System.out, System.err)
     }
 }
 
 jar{
-	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     archiveFileName = "${project.archivesBaseName}Desktop.jar"
 
     from{
@@ -86,5 +89,14 @@ task deploy(type: Jar){
             delete "$buildDir/libs/${project.archivesBaseName}Desktop.jar"
             delete "$buildDir/libs/${project.archivesBaseName}Android.jar"
         }
+    }
+}
+
+//for linux, steam version default location
+task run(type: Jar) {
+    dependsOn jar
+
+    doLast {
+        "/home/ars/.local/share/Steam/steamapps/common/Mindustry/Mindustry".execute()
     }
 }
