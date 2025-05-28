@@ -1,15 +1,7 @@
-#the mod name as displayed in-game
 displayName: "HCheat"
-
-#the internal name of your mod
 name: "hcheat"
-
-#your name
 author: "Arsen1yGD"
-
-#the fully qualified main class of the mod
 main: "hcheat.H"
-
 #the mod description as seen in the mod dialog
 description: '''H.
 Этот мод - [red]чит[]. Он может испортить интерес в игре.
@@ -24,9 +16,5 @@ What it adds:
 - Super duper mega battery.
 - OP power node.
 '''
-
-#the mod version
-version: 1.0
-
-#the minimum game build required to run this mod
+version: 0.1
 minGameVersion: 149
