@@ -5,12 +5,12 @@ import mindustry.type.ItemStack
 import mindustry.world.blocks.distribution.StackConveyor
 import mindustry.world.meta.BuildVisibility
 
-class HStackConveyor(name: String = "h-stack-conveyor") : StackConveyor(name) {
+class HStackConveyor(name: String = "stack-conveyor") : StackConveyor(name) {
     init {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = 640f / 60f
+        speed = HBlocks.conveyorSpeed / 60F
     }
 
     inner class HStackConveyorBuild : StackConveyorBuild() {

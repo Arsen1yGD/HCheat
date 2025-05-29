@@ -2,19 +2,18 @@ package hcheat.blocks
 
 import mindustry.type.Category
 import mindustry.type.ItemStack
-import mindustry.world.blocks.distribution.Conveyor
+import mindustry.world.blocks.distribution.Router
 import mindustry.world.meta.BuildVisibility
 
-class HConveyor(name: String = "conveyor") : Conveyor(name) {
+class HRouter(name: String = "router") : Router(name) {
     init {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = HBlocks.conveyorSpeed / 137.5F // idfk why i have to divide by this
-        displayedSpeed = HBlocks.conveyorSpeed
+        speed = HBlocks.conveyorSpeed
     }
 
-    inner class HConveyorBuild : ConveyorBuild() {
+    inner class HRouterBuild : RouterBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

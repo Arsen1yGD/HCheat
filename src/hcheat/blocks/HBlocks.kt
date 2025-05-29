@@ -1,6 +1,7 @@
 package hcheat.blocks
 
 import arc.graphics.Color
+import mindustry.gen.Building
 import mindustry.world.Block
 import mindustry.world.meta.Env
 
@@ -9,6 +10,7 @@ object HBlocks {
     val accentColor: Color? = Color.valueOf("80a9ff")
     val shadeColor: Color? = Color.valueOf("7a8cdc")
     val lightColor: Color? = Color.valueOf("a4b8fa")
+    val conveyorSpeed: Float = 640F
     val blockMap: List<Block> = listOf(
         HItemSource(),
         HLiquidSource(),
@@ -17,6 +19,8 @@ object HBlocks {
         HAmazingBattery(),
         HConveyor(),
         HStackConveyor(),
+        HRouter(),
+        HTurret(),
     )
 
     fun setupBlock(block: Block) {
