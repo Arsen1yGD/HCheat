@@ -22,6 +22,10 @@ object HBlocks {
         HDistributor(),
         HBridgeConveyor(),
         HTurret(),
+        HWall(),
+        HWall("wall-large").apply {
+            size = 2
+        }
     )
 
     fun setupBlock(block: Block) {
