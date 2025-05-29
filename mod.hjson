@@ -9,12 +9,15 @@ description: '''H.
 - Быстрые, мощные и неразрушаемые источники.
 - Очень ёмкая батарейка.
 - ОП силовой узел
+- Быстрый (стаковый-)конвеер.
 
 This mod is [red]cheat[]. It can reduce interest in game.
 What it adds:
 - Fast, powerful and unbreakable sources.
 - Super duper mega battery.
 - OP power node.
+- Fast (stack-)conveyor
+
 '''
 version: 0.1
 minGameVersion: 149

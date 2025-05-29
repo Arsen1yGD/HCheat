@@ -3,14 +3,13 @@
 Simple mod that adds stronger sandbox items.
 Currently, it has:
 - OP Item, Liquid and Power sources.
-- Mega fast conveyor.
+- Mega fast (stack-)conveyor.
 - Very capacitive battery.
 - OP Power node, w/ longer distance, and connections count.
 
 This mod is just for learning Mindustry modding.
 
 TODO:
-- Make mega fast stack conveyor.
 - Make 1-shot turret.
 - Make unbreakable wall.
 - Make OP regenerator, (and a thing that makes your building go faster).
