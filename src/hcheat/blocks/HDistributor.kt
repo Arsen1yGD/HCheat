@@ -10,7 +10,8 @@ class HDistributor(name: String = "distributor") : Router(name) {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = HBlocks.conveyorSpeed
+        speed = HBlocks.CONVEYOR_SPEED * 7
+        size = 2
     }
 
     inner class HDistributorBuild : RouterBuild() {

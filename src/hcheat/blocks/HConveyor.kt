@@ -10,8 +10,8 @@ class HConveyor(name: String = "conveyor") : Conveyor(name) {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = HBlocks.conveyorSpeed / 137.5F // idfk why i have to divide by this
-        displayedSpeed = HBlocks.conveyorSpeed
+        speed = HBlocks.CONVEYOR_SPEED / 137.5F // idfk why i have to divide by this
+        displayedSpeed = HBlocks.CONVEYOR_SPEED
     }
 
     inner class HConveyorBuild : ConveyorBuild() {

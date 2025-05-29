@@ -10,7 +10,7 @@ class HRouter(name: String = "router") : Router(name) {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = HBlocks.conveyorSpeed
+        speed = HBlocks.CONVEYOR_SPEED * 3
     }
 
     inner class HRouterBuild : RouterBuild() {

@@ -10,7 +10,7 @@ class HStackConveyor(name: String = "stack-conveyor") : StackConveyor(name) {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        speed = HBlocks.conveyorSpeed / 60F
+        speed = HBlocks.CONVEYOR_SPEED / 60F
     }
 
     inner class HStackConveyorBuild : StackConveyorBuild() {
