@@ -3,10 +3,11 @@ name: Java CI
 on:
   push:
     paths:
-      - src/
-      - assets/
+      - src/**
+      - assets/**
       - mod.hjson
       - build.gradle
+      - .github/workflows/**
 
 jobs:
   buildJar:
