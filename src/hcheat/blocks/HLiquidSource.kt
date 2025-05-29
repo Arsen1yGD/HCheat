@@ -12,7 +12,7 @@ class HLiquidSource(name: String = "liquid-source") : LiquidSource(name) {
         requirements(Category.liquid, BuildVisibility.shown, ItemStack.with())
     }
 
-    inner class HLiquidSourceBuilding : LiquidSourceBuild() {
+    inner class HLiquidSourceBuild : LiquidSourceBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

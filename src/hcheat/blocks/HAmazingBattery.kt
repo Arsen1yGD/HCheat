@@ -15,7 +15,7 @@ class HAmazingBattery(name: String = "amazing-battery") : Battery(name) {
         consumePowerBuffered(Float.MAX_VALUE)
     }
 
-    inner class HAmazingSourceBuilding : BatteryBuild() {
+    inner class HAmazingSourceBuild : BatteryBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

@@ -16,7 +16,7 @@ class HPowerNode(name: String = "power-node") : PowerNode(name) {
         laserColor2 = HBlocks.accentColor
     }
 
-    inner class HPowerNodeBuilding : PowerNodeBuild() {
+    inner class HPowerNodeBuild : PowerNodeBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

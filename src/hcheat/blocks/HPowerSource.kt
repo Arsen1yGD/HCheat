@@ -17,7 +17,7 @@ class HPowerSource(name: String = "power-source") : PowerSource(name) {
         laserColor2 = HBlocks.accentColor
     }
 
-    inner class HPowerSourceBuilding : PowerSourceBuild() {
+    inner class HPowerSourceBuild : PowerSourceBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

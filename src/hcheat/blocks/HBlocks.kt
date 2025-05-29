@@ -15,7 +15,8 @@ object HBlocks {
         HPowerSource(),
         HPowerNode(),
         HAmazingBattery(),
-        HConveyor()
+        HConveyor(),
+        HStackConveyor(),
     )
 
     fun setupBlock(block: Block) {

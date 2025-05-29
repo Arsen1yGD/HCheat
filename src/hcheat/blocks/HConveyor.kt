@@ -14,7 +14,7 @@ class HConveyor(name: String = "h-conveyor") : Conveyor(name) {
         displayedSpeed = 640F
     }
 
-    inner class HConveyorBuilding : ConveyorBuild() {
+    inner class HConveyorBuild : ConveyorBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }

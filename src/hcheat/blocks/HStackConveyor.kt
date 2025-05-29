@@ -2,18 +2,18 @@ package hcheat.blocks
 
 import mindustry.type.Category
 import mindustry.type.ItemStack
-import mindustry.world.blocks.sandbox.ItemSource
+import mindustry.world.blocks.distribution.StackConveyor
 import mindustry.world.meta.BuildVisibility
 
-class HItemSource(name: String = "item-source") : ItemSource(name) {
+class HStackConveyor(name: String = "h-stack-conveyor") : StackConveyor(name) {
     init {
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.distribution, BuildVisibility.shown, ItemStack.with())
-        itemsPerSecond = 262144
+        speed = 6400f / 60f
     }
 
-    inner class HItemSourceBuild : ItemSourceBuild() {
+    inner class HStackConveyorBuild : StackConveyorBuild() {
         override fun handleDamage(amount: Float): Float {
             return 0F
         }
