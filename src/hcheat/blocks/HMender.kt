@@ -10,6 +10,7 @@ import mindustry.world.meta.BuildVisibility
 class HMender(name: String = "mender") : MendProjector(name) {
     init {
         baseColor = Color.valueOf("8aa3f4")
+        phaseColor = Color.valueOf("8aa3f4")
         super.init()
         HBlocks.setupBlock(this)
         requirements(Category.effect, BuildVisibility.shown, ItemStack.with())
