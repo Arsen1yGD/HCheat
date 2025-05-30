@@ -25,7 +25,8 @@ object HBlocks {
         HWall(),
         HWall("wall-large").apply {
             size = 2
-        }
+        },
+        HMender()
     )
 
     fun setupBlock(block: Block) {
