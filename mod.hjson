@@ -10,6 +10,8 @@ description: '''H.
 - Очень ёмкая батарейка.
 - ОП силовой узел
 - Быстрый (стаковый-)конвеер.
+- ОП Турель
+- ОП Стены
 
 This mod is [red]cheat[]. It can reduce interest in game.
 What it adds:
@@ -17,7 +19,9 @@ What it adds:
 - Super duper mega battery.
 - OP power node.
 - Fast (stack-)conveyor
+- OP Turret
+- OP Walls
 
 '''
-version: 0.1
+version: 0.2
 minGameVersion: 149
