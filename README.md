@@ -6,12 +6,11 @@ Currently, it has:
 - Mega fast (stack-)conveyor.
 - Very capacitive battery.
 - OP Power node, w/ longer distance, and connections count.
-
+- 1-shot turret.
+- Unbreakable wall.
 This mod is just for learning Mindustry modding.
 
 TODO:
-- Make 1-shot turret.
-- Make unbreakable wall.
 - Make OP regenerator, (and a thing that makes your building go faster).
 - Make universal factory.
 - Make a tech tree entry.
