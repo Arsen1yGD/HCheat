@@ -6,9 +6,9 @@ import mindustry.world.meta.Env
 
 object HBlocks {
 
-    val accentColor: Color? = Color.valueOf("80a9ff")
-    val shadeColor: Color? = Color.valueOf("7a8cdc")
-    val lightColor: Color? = Color.valueOf("a4b8fa")
+    val accentColor: Color? = Color.valueOf("7a8cdc")
+    val shadeColor: Color? = Color.valueOf("626f9b")
+    val lightColor: Color? = Color.valueOf("8aa3f4")
     const val CONVEYOR_SPEED: Float = 640F
     val blockMap: List<Block> = listOf(
         HItemSource(),
