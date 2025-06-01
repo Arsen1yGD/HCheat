@@ -9,7 +9,15 @@ class HOverdriver(name: String = "overdriver") : OverdriveProjector(name) {
     init {
         super.init()
         HBlocks.setupBlock(this)
-        requirements(Category.defense, BuildVisibility.shown, ItemStack.with())
+        requirements(Category.effect, BuildVisibility.shown, ItemStack.with())
         speedBoost = 64F
+        range = 1024F
+        size = 2
+    }
+
+    inner class HOverdriverBuild : OverdriveBuild() {
+        override fun handleDamage(amount: Float): Float {
+            return 0F
+        }
     }
 }

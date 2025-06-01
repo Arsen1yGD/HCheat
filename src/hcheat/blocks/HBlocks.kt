@@ -26,7 +26,8 @@ object HBlocks {
         HWall("wall-large").apply {
             size = 2
         },
-        HMender()
+        HMender(),
+        HOverdriver()
     )
 
     fun setupBlock(block: Block) {
