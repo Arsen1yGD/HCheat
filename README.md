@@ -8,10 +8,11 @@ Currently, it has:
 - OP Power node, w/ longer distance, and connections count.
 - 1-shot turret.
 - Unbreakable wall.
+- Fast regenerator.
+- Fast overdrive projector.
 This mod is just for learning Mindustry modding.
 
 TODO:
-- Make OP regenerator, (and a thing that makes your building go faster).
 - Make universal factory.
 - Make a tech tree entry.
 - ~~Copy~~ Make things from Invincible Cheat.
